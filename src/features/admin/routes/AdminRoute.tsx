@@ -1,14 +1,14 @@
 import { Route, Routes } from "react-router-dom";
-import Dashboard from "../pages/admin_librarian_pages/Dashboard";
-import Categories from "../pages/admin_librarian_pages/Categories";
-import AddBook from "../pages/admin_librarian_pages/AddBook";
-import Books from "../pages/admin_librarian_pages/Books";
-import BookDetails from "../pages/admin_librarian_pages/BookDetails";
-import Copies from "../pages/admin_librarian_pages/Copies";
-import ExtensionRequest from "../pages/admin_librarian_pages/ExtensionRequest";
-import Feedback from "../pages/admin_librarian_pages/Feedback";
-import Borrowings from "../pages/admin_librarian_pages/Borrowings";
-import UserPage from "../pages/admin_librarian_pages/UserPage";
+import Dashboard from "../pages/Dashboard";
+import Categories from "../pages/Categories";
+import AddBook from "../pages/AddBook";
+import Books from "../pages/Books";
+import BookDetails from "../pages/BookDetails";
+import Copies from "../pages/Copies";
+import ExtensionRequest from "../pages/ExtensionRequest";
+import Feedback from "../pages/Feedback";
+import Borrowings from "../pages/Borrowings";
+import UserPage from "../pages/UserPage";
 
 function AdminRoute() {
     return (

@@ -90,6 +90,7 @@ export default function PrimarySearchAppBar() {
   const renderMenu = (
     <Menu
       anchorEl={anchorEl}
+      
       anchorOrigin={{
         vertical: 'top',
         horizontal: 'right',
@@ -139,10 +140,12 @@ export default function PrimarySearchAppBar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
-        <Toolbar>
+      <AppBar position="fixed"
+       sx={{zIndex:9999}}
+      >
+        <Toolbar >
           <Box onClick={handleNavigateHome} sx={{cursor:"pointer",display:"flex",gap:"12px",justifyContent:"center", alignItems:"center"}}    >
-          <Icon  sx={{display:"flex",fontSize: 40 }} >
+          <Icon  sx={{display:"flex",fontSize: 35 }} >
               <img width={'100%'} style={{alignSelf:"center"}}  src="/actalentlogo.svg"/>
           </Icon>
           <Typography

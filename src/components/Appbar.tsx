@@ -15,7 +15,8 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
-import { Icon } from '@mui/material';
+import { Container, Icon } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -82,6 +83,10 @@ export default function PrimarySearchAppBar() {
   };
 
   const menuId = 'primary-search-account-menu';
+  const navhook = useNavigate()
+  const handleNavigateHome = ()=>{
+      navhook("/")
+  }
   const renderMenu = (
     <Menu
       anchorEl={anchorEl}
@@ -128,30 +133,7 @@ export default function PrimarySearchAppBar() {
         </IconButton>
         <p>Messages</p>
       </MenuItem>
-      <MenuItem>
-        <IconButton
-          size="large"
-          aria-label="show 17 new notifications"
-          color="inherit"
-        >
-          <Badge badgeContent={17} color="error">
-            <NotificationsIcon />
-          </Badge>
-        </IconButton>
-        <p>Notifications</p>
-      </MenuItem>
-      <MenuItem onClick={handleProfileMenuOpen}>
-        <IconButton
-          size="large"
-          aria-label="account of current user"
-          aria-controls="primary-search-account-menu"
-          aria-haspopup="true"
-          color="inherit"
-        >
-          <AccountCircle />
-        </IconButton>
-        <p>Profile</p>
-      </MenuItem>
+      
     </Menu>
   );
 
@@ -159,7 +141,7 @@ export default function PrimarySearchAppBar() {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
-          <Box sx={{display:"flex",gap:"12px",justifyContent:"center", alignItems:"center"}}>
+          <Box onClick={handleNavigateHome} sx={{cursor:"pointer",display:"flex",gap:"12px",justifyContent:"center", alignItems:"center"}}    >
           <Icon  sx={{display:"flex",fontSize: 40 }} >
               <img width={'100%'} style={{alignSelf:"center"}}  src="/actalentlogo.svg"/>
           </Icon>

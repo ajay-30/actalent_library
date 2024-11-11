@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { useActalentLibraryContext } from "../context/ActalentLibraryContext";
+import { useActalentLibraryContext } from "../shared/context/ActalentLibraryContext";
 import { Container, Skeleton, Typography } from "@mui/material";
-import UserRoute from "../features/user/routes/UserRoute";
-import AdminRoute from "../features/admin/routes/AdminRoute";
+import UserRoute from "./user/UserRoute";
+import AdminRoute from "./admin/AdminRoute";
 
 function IndexHandler(){
 

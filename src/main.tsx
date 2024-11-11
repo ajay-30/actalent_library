@@ -3,10 +3,10 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.tsx'
 import { ThemeProvider } from '@emotion/react'
-import DefaultTheme from './themes/DefaultTheme.tsx'
+import DefaultTheme from './assets/styles/themes/DefaultTheme.tsx'
 import { CssBaseline } from '@mui/material'
-import ClassicTheme from './themes/ClassicTheme.tsx'
-import ActalentTheme from './themes/ActalentTheme.tsx'
+import ClassicTheme from './assets/styles/themes/ClassicTheme.tsx'
+import ActalentTheme from './assets/styles/themes/ActalentTheme.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

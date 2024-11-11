@@ -1,12 +1,12 @@
 import { Route, Routes } from "react-router-dom";
-import BookDetails from "../user_pages/BookDetails";
-import Books from "../user_pages/Books";
-import Categories from "../user_pages/Categories";
-import Dashboard from "../user_pages/Dashboard";
-import Favourites from "../user_pages/Favourites";
-import Feedback from "../user_pages/Feedback";
-import MyLibrary from "../user_pages/MyLibrary";
-import Profile from "../user_pages/Profile";
+import BookDetails from "../pages/BookDetails";
+import Books from "../pages/Books";
+import Categories from "../pages/Categories";
+import Dashboard from "../pages/Dashboard";
+import Favourites from "../pages/Favourites";
+import Feedback from "../pages/Feedback";
+import MyLibrary from "../pages/MyLibrary";
+import Profile from "../pages/Profile";
 
 function UserRoute() {
     return (
